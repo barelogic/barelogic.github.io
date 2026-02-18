@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Building Scalable REST APIs with Django",
+    "excerpt": "Learn how to design and implement efficient REST APIs using Django REST Framework, with best practices for authentication, serialization, and optimization techniques.",
+    "date": "2026-02-10",
+    "readTime": "8 min read",
+    "url": "https://yourblog.com/django-rest-apis",
+    "tags": ["Django", "Python", "REST API", "Backend"]
+  },
+  {
+    "id": 2,
+    "title": "React Performance Optimization Techniques",
+    "excerpt": "Explore advanced React patterns including memoization, code splitting, lazy loading, and React.memo to build lightning-fast web applications.",
+    "date": "2026-01-28",
+    "readTime": "6 min read",
+    "url": "https://yourblog.com/react-performance",
+    "tags": ["React", "JavaScript", "Performance", "Frontend"]
+  },
+  {
+    "id": 3,
+    "title": "PostgreSQL vs MongoDB: Choosing the Right Database",
+    "excerpt": "A comprehensive comparison of relational and document databases, with real-world use cases, performance considerations, and decision-making guidelines.",
+    "date": "2026-01-15",
+    "readTime": "10 min read",
+    "url": "https://yourblog.com/database-comparison",
+    "tags": ["PostgreSQL", "MongoDB", "Database", "Architecture"]
+  }
+]
