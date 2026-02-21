@@ -101,17 +101,17 @@ const About = () => {
                 >
                   <FaLinkedin size={32} />
                 </motion.a>
-                <motion.a
+                {/* <motion.a
                   whileHover={{ scale: 1.2, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
                   href="https://instagram.com/yourprofile"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-link"
-                  aria-label="Instagram"
+                  aria-label="Instagram" 
                 >
                   <FaInstagram size={32} />
-                </motion.a>
+                </motion.a>*/}
               </div>
             </div>
           </div>

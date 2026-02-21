@@ -10,7 +10,7 @@
     { "name": "Python", "level": 85 },
     { "name": "Node.js", "level": 80 },
     { "name": "Express.js", "level": 80 },
-    { "name": "REST APIs", "level": 90 }
+    { "name": "REST APIs", "level": 70 }
   ],
   "database": [
     { "name": "PostgreSQL", "level": 85 },

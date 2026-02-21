@@ -28,15 +28,5 @@
     "liveUrl": "-",
     "featured": false,
     "hasLiveDemo": false
-  },
-  {
-    "id": 4,
-    "title": "Analytics Dashboard",
-    "description": "Data visualization dashboard built with React and Django backend. Displays real-time analytics, interactive charts, and comprehensive reports with PostgreSQL data aggregation and Chart.js visualizations.",
-    "technologies": ["React", "Django", "PostgreSQL", "Chart.js", "D3.js"],
-    "githubUrl": "https://github.com/barelogic/analytics-dashboard",
-    "liveUrl": "-",
-    "featured": false,
-    "hasLiveDemo": false
   }
 ]

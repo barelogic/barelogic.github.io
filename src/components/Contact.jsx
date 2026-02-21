@@ -219,7 +219,7 @@ const Contact = () => {
 
                 {/* Social Links */}
                 <div>
-                  <p className="text-slate-400 mb-4 font-medium">Follow me on:</p>
+                  <p className="text-slate-400 mb-4 font-medium">Connect with me on:</p>
                   <div className="flex gap-4">
                     <motion.a
                       whileHover={{ scale: 1.1, rotate: 5 }}
@@ -235,7 +235,7 @@ const Contact = () => {
                     <motion.a
                       whileHover={{ scale: 1.1, rotate: 5 }}
                       whileTap={{ scale: 0.9 }}
-                      href="https://linkedin.com/in/yourprofile"
+                      href="https://www.linkedin.com/in/venkatesh-rathinasabapathy-671491322/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-4 bg-primary-500/10 hover:bg-primary-500/20 rounded-lg transition-colors group"
@@ -243,7 +243,7 @@ const Contact = () => {
                     >
                       <FaLinkedin className="text-primary-400 text-2xl" />
                     </motion.a>
-                    <motion.a
+                    {/* <motion.a
                       whileHover={{ scale: 1.1, rotate: 5 }}
                       whileTap={{ scale: 0.9 }}
                       href="https://instagram.com/yourprofile"
@@ -253,16 +253,16 @@ const Contact = () => {
                       aria-label="Instagram"
                     >
                       <FaInstagram className="text-primary-400 text-2xl" />
-                    </motion.a>
+                    </motion.a> */}
                   </div>
                 </div>
               </div>
 
-              <div className="card bg-gradient-to-br from-primary-500/10 to-primary-600/10 border-primary-500/30">
+              {/* <div className="card bg-gradient-to-br from-primary-500/10 to-primary-600/10 border-primary-500/30">
                 <p className="text-slate-300 text-center text-lg font-medium">
                   Open to opportunities and collaborations
                 </p>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
