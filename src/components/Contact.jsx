@@ -27,19 +27,39 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
     
-    // Simulate form submission (replace with actual backend integration)
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      setSubmitStatus('success');
+    try {
+      // Using FormSpree - sends email to venkateshr.work@gmail.com
+      const response = await fetch('https://formspree.io/f/xbdazrwq', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _replyto: formData.email, // Allow replying directly to sender
+          _subject: `New Portfolio Contact from ${formData.name}`,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setSubmitStatus(null), 5000);
+      } else {
+        setSubmitStatus('error');
+        setTimeout(() => setSubmitStatus(null), 5000);
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+      setTimeout(() => setSubmitStatus(null), 5000);
+    } finally {
       setIsSubmitting(false);
-      
-      // Reset form
-      setFormData({ name: '', email: '', message: '' });
-      
-      // Clear status after 3 seconds
-      setTimeout(() => setSubmitStatus(null), 3000);
-    }, 1500);
+    }
   };
 
   return (
@@ -138,15 +158,25 @@ const Contact = () => {
                   <motion.p
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="text-green-400 text-center"
+                    className="text-green-400 text-center font-medium"
                   >
-                    Message sent successfully! I'll get back to you soon.
+                    ✅ Message sent successfully! I'll get back to you soon.
+                  </motion.p>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <motion.p
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-red-400 text-center font-medium"
+                  >
+                    ❌ Failed to send message. Please try again or email me directly.
                   </motion.p>
                 )}
               </form>
 
               <p className="text-sm text-slate-500 mt-4 text-center">
-                Note: Integrate with a backend service or email API for functionality
+                Messages are sent directly to venkateshr.work@gmail.com
               </p>
             </motion.div>
 

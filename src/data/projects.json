@@ -1,30 +1,33 @@
 [
   {
     "id": 1,
-    "title": "E-Commerce Platform",
-    "description": "Full-stack MERN e-commerce application with user authentication, product management, shopping cart, and secure payment integration using Stripe. Features include order tracking, admin dashboard, and real-time inventory management.",
-    "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe"],
-    "githubUrl": "https://github.com/barelogic/ecommerce-platform",
-    "liveUrl": "https://ecommerce-demo.com",
-    "featured": true
+    "title": "FullStack Application for a Civil Engineering x Tech Firm",
+    "description": "Full-stack HTML+ExpressJS based application with user authentication, form data, shopping cart, and secure payment integration using .",
+    "technologies": ["Bootstrap","HTML", "Node.js", "ExpressJS", "PostgreSQL"],
+    "githubUrl": "https://github.com/barelogic/havensure",
+    "liveUrl": "-",
+    "featured": true,
+    "hasLiveDemo": false
   },
   {
     "id": 2,
-    "title": "Task Management API",
-    "description": "RESTful API built with Django and Django REST Framework. Features include JWT authentication, task CRUD operations, user management, role-based permissions, and PostgreSQL database with optimized queries.",
-    "technologies": ["Django", "Python", "PostgreSQL", "REST API", "JWT"],
-    "githubUrl": "https://github.com/barelogic/task-api",
-    "liveUrl": "https://task-api-docs.com",
-    "featured": true
+    "title": "Basic URL Shortener Service",
+    "description": "Implemented a  URL Shortening Service using Flask and SQLite. Works on Local Access Network and can handle multiple URL shortening requests at a time.",
+    "technologies": ["Flask", "Python", "SQLite", "REST API"],
+    "githubUrl": "https://github.com/barelogic/Basic-URL-shortener",
+    "liveUrl": "-",
+    "featured": true,
+    "hasLiveDemo": false
   },
   {
     "id": 3,
-    "title": "Real-Time Chat Application",
-    "description": "WebSocket-based chat application using React and Socket.io. Supports multiple chat rooms, private messaging, typing indicators, online user status, and message history with MongoDB persistence.",
-    "technologies": ["React", "Socket.io", "Node.js", "MongoDB", "WebSocket"],
-    "githubUrl": "https://github.com/barelogic/chat-app",
-    "liveUrl": "https://chat-app-demo.com",
-    "featured": false
+    "title": "LinkedIN Clone",
+    "description": "Implemented the UI, Django Backend and WebSocket-based real-time messaging system for a LinkedIn-like application in collaboration with another developer. The application includes user authentication, profile management, job postings, and a real-time chat feature using Socket.io.",
+    "technologies": ["React", "Socket.io", "Django", "PostgreSQL", "WebSocket"],
+    "githubUrl": "https://github.com/barelogic/LinkedIn_Clone",
+    "liveUrl": "-",
+    "featured": false,
+    "hasLiveDemo": false
   },
   {
     "id": 4,
@@ -32,7 +35,8 @@
     "description": "Data visualization dashboard built with React and Django backend. Displays real-time analytics, interactive charts, and comprehensive reports with PostgreSQL data aggregation and Chart.js visualizations.",
     "technologies": ["React", "Django", "PostgreSQL", "Chart.js", "D3.js"],
     "githubUrl": "https://github.com/barelogic/analytics-dashboard",
-    "liveUrl": "https://analytics-demo.com",
-    "featured": false
+    "liveUrl": "-",
+    "featured": false,
+    "hasLiveDemo": false
   }
 ]

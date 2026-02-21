@@ -48,20 +48,22 @@ const ProjectCard = ({ project, index }) => {
           href={project.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary-500 text-primary-400 hover:bg-primary-500 hover:text-white rounded-lg transition-all duration-300 font-semibold"
+          className={`${project.hasLiveDemo ? 'flex-1' : 'w-full'} flex items-center justify-center gap-2 px-4 py-3 border-2 border-primary-500 text-primary-400 hover:bg-primary-500 hover:text-white rounded-lg transition-all duration-300 font-semibold`}
         >
           <FaGithub /> View Code
         </motion.a>
-        <motion.a
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          href={project.liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-primary-500 text-white hover:bg-primary-600 rounded-lg transition-all duration-300 font-semibold"
-        >
-          <FaExternalLinkAlt /> Live Demo
-        </motion.a>
+        {project.hasLiveDemo && (
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-primary-500 text-white hover:bg-primary-600 rounded-lg transition-all duration-300 font-semibold"
+          >
+            <FaExternalLinkAlt /> Live Demo
+          </motion.a>
+        )}
       </div>
     </motion.div>
   );
